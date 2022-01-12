@@ -1,8 +1,16 @@
+import Banner from "../components/banner";
+import News from "../components/new";
+
 const HomePage = {
-    print() {
-      return `<h1>Home Page</h1>`;
+    render() {
+        return /* html */`
+            <div class="banner">
+                ${Banner.render()}
+            </div>
+            <div class="news">
+                ${News.render()}
+            </div>
+        `;
     },
-  };
-  
-  export default HomePage;
-  
+};
+export default HomePage;

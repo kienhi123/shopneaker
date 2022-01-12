@@ -1,7 +1,7 @@
 const AboutPage = {
-    print() {
-      return `<h1>About Page</h1>`;
+    render() {
+        return `About Page`;
     },
-  };
-  export default AboutPage;
-  
+};
+
+export default AboutPage;

@@ -1,8 +1,6 @@
 const ProductPage = {
-    print() {
-      return `<h1>ProductPage</h1>`;
+    render() {
+        return `Product Page`;
     },
-  };
-  
-  export default ProductPage;
-  
+};
+export default ProductPage;
