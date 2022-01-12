@@ -1,6 +1,6 @@
 const ProductPage = {
     render() {
-        return `Product Page`;
+        return `Chương trình đào tạo`;
     },
 };
 export default ProductPage;

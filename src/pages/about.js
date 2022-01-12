@@ -1,6 +1,6 @@
 const AboutPage = {
     render() {
-        return `About Page`;
+        return `Tuyển Sinh`;
     },
 };
 
