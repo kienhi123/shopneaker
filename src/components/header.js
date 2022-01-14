@@ -12,7 +12,7 @@ const Header = {
           <li class="px-10 pt-5">
           <input type="text" name="search">
           </li>
-          <li class="p-1 pt-5">
+          <li class="p-2 pt-5">
           <button class="bg-zinc-500 px-4 "  type="submit "  >Tìm kiếm</button >
           </li>
 
