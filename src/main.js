@@ -1,21 +1,20 @@
 import Navigo from "navigo";
-import Footer from "./components/footer";
-import Header from "./components/header";
 import AboutPage from "./pages/about";
-import logo from "./components/logo";
 import HomePage from "./pages/homepage";
 import ProductPage from "./pages/products";
 import Detailpage from "./pages/details";
-import adminproduct from "./pages/adim/adminproduct";
+
+import Singin from "./pages/signin";
+import Singnup from "./pages/signup";
+import table from "./components/admin/table";
+
+import edit from "./pages/edit";
+import Dashboard from "./pages/adim/Dashboardpage";
 
 const router = new Navigo("/", { linksSelector: "a" });
 
 const print = (content) => {
-    document.querySelector("#header").innerHTML = Header.render();
-    document.querySelector("#logo").innerHTML = logo.render();
-
     document.querySelector("#app").innerHTML = content;
-    document.querySelector("#footer").innerHTML = Footer.render();
 };
 
 router.on({
@@ -28,12 +27,25 @@ router.on({
     "/product": () => {
         print(ProductPage.render());
     },
+    "/Signin": () => {
+        print(Singin.render());
+    },
+    "/Signup": () => {
+        print(Singnup.render());
+    },
     "/products/:id": ({ data }) => {
         const { id } = data;
         print(Detailpage.render(+id));
     },
-    "admin/productlist": () => {
-        print(adminproduct.render());
+    "/pages/table/:id/edit": ({ data }) => {
+        const { id } = data;
+        print(edit.render(id));
+    },
+    "admin/Dashboard": () => {
+        print(Dashboard.render());
+    },
+    "/admin/news": () => {
+        print(table.render());
     },
 
 });

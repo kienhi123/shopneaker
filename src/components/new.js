@@ -7,7 +7,7 @@ const News = {
         <div class="grid grid-cols-3 gap-8">
             ${data.map((post) => `
             <div class="border p-3 mx-auto">
-                <a href="/products/${post.id}"><img src="${post.img}" alt="" /></a>
+                <a " href="/products/${post.id}"><img class="mx-auto" src="${post.img}" alt="" /></a>
                 <h3 class="my-3"><a href="/products/${post.id}" class="font-semibold text-orange-500 text-lg">${post.title}</a></h3>
                 <p>${post.desc}</p>
             </div>
@@ -19,7 +19,7 @@ const News = {
         <div class="grid grid-cols-3 gap-8">
             ${data.map((post) => `
             <div class="border p-3 mx-auto">
-                <a class="mx-auto href="/products/${post.id}"><img src="${post.img}" alt="" /></a>
+                <a class="mx-auto href="/products/${post.id}"><img class="mx-auto" src="${post.img}" alt="" /></a>
                 <h3 class="my-3"><a href="/products/${post.id}" class="font-semibold text-orange-500 text-lg">${post.title}</a></h3>
                 <p>${post.desc}</p>
             </div>
