@@ -9,10 +9,10 @@ const Header = {
           <li><a href="/product" class="block px-4 py-5 hover:bg-indigo-500 hover:text-white">Góc sinh viên</a></li>
           <li><a href="/product" class="block px-4 py-5 hover:bg-indigo-500 hover:text-white">Tuyển dụng</a></li>
           <li><a href="admin/Dashboard" class="block px-4 py-5 hover:bg-indigo-500 hover:text-white">ADMIN</a></li>
-          <li class="px-10 pt-5">
+          <li class=" pt-5">
           <input type="text" name="search">
           </li>
-          <li class="p-2 pt-5">
+          <li class="pl-3 px-5 pt-5">
           <button class="bg-zinc-500 px-4 "  type="submit "  >Tìm kiếm</button >
           </li>
 
