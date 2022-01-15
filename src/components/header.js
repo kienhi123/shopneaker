@@ -16,11 +16,11 @@ const Header = {
           <button class="bg-zinc-500 px-4 "  type="submit "  >Tìm kiếm</button >
           </li>
 
-          <li class="p-1 pt-5 ">
+          <li class="pl-7 pt-5 ">
           <button class="bg-fuchsia-600 text-white p-2 py-1 rounded-md text-sm font-medium "><a href="/Signin">Đăng kí</a></button>
           </li>
 
-          <li class="p-1 pt-5">
+          <li class="pl-7 pt-5">
           <button class="bg-rose-600 text-white p-2 py-1 rounded-md text-sm font-medium "><a href="/Signup">Đăng Nhập</a></button>
           </li>
           
