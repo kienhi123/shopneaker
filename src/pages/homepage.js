@@ -5,17 +5,19 @@ import logo from "../components/logo";
 import News from "../components/new";
 
 const HomePage = {
-    render() {
+    async  render() {
         return /* html */`
              <div class="logo">
                  ${logo.render()}
             </div>
-            ${Header.render()}
+            <div id="header">
+                ${Header.render()}
+            </div>
             <div class="banner">
                 ${Banner.render()}
             </div>
             <div class="news">
-                ${News.render()}
+                ${await News.render()}
             </div>
 
             <div class="footer">
@@ -24,6 +26,9 @@ const HomePage = {
 
             
         `;
+    },
+    afterRender() {
+        Header.afterRender();
     },
 };
 export default HomePage;

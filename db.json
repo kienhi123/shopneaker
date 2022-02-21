@@ -1,0 +1,78 @@
+{
+  "posts": [
+    {
+      "id": 27,
+      "title": "Martha 123hihi123",
+      "img": "http://placeimg.com/640/480/people",
+      "desc": "hello ae mixxi"
+    },
+    {
+      "id": 31,
+      "title": "Thêm mới bài viết12333333",
+      "img": "http://placeimg.com/640/480/business",
+      "desc": "Bài viêt mới đăng"
+    },
+    {
+      "id": 32,
+      "title": "Long chanh thôn đã chỉnh sửa",
+      "img": "http://placeimg.com/640/480/fashion",
+      "desc": "Non ơi là non"
+    },
+    {
+      "title": "anh kiên",
+      "img": "http://res.cloudinary.com/djultth5g/image/upload/v1644810912/crn9wsxtuafju2taldoz.jpg",
+      "desc": "hihi",
+      "id": 33
+    },
+    {
+      "title": "Yolanda Roob update",
+      "img": "http://res.cloudinary.com/djultth5g/image/upload/v1644920136/cs7tpcleugc4apm6qbcv.jpg",
+      "desc": "hihi",
+      "id": 34
+    },
+    {
+      "id": 35,
+      "title": "eeeee",
+      "img": "http://res.cloudinary.com/djultth5g/image/upload/v1645435265/palkhpl91oo32yogp6y3.jpg",
+      "desc": ""
+    }
+  ],
+  "users": [
+    {
+      "email": "tkien5879@gmail.com",
+      "password": "$2a$10$.sQ00cp2/Qb1z4f.URQoPO72PgwsrttDDtm0Ym8qfL044UFL8yyTm",
+      "username": "kienhi",
+      "id": 1
+    },
+    {
+      "email": "tkien5257579@gmail.com",
+      "password": "$2a$10$XaFlRmTawCju3keXRmMtcOKP5vCm6i22RnVHjWM2c9vV3ru.YW3j.",
+      "username": "kienhi",
+      "id": 2
+    },
+    {
+      "email": "kien12345@gmail.com",
+      "password": "$2a$10$bgP8s1yjE.Binisx0YHGCOHJyg.0FpO5hSBt7PCNsWhsw4HRaVJyq",
+      "username": "VIP2k22001",
+      "id": 3
+    },
+    {
+      "email": "kien1234998@gmail.com",
+      "password": "$2a$10$hml09MSL/l3H4kxS/9jAvOCre6urBywzVQogEkZqkU1.93Oyvy4gm",
+      "username": "VIP2k22001",
+      "id": 4
+    },
+    {
+      "email": "tkien587910@gmail.com",
+      "password": "$2a$10$b1xBhNCpM8sKchSlqy7uVOvFXFrhbQIAKJfkoD.vH8.rLCcgiYSfy",
+      "username": "kien123",
+      "id": 5
+    },
+    {
+      "email": "tkien587911@gmail.com",
+      "password": "$2a$10$zp4mNsMcsRFGtgy1j0E4YeaKay68Q7Vrzsj8OGaXSJKkeyftYJV4G",
+      "username": "kien123",
+      "id": 6
+    }
+  ]
+}

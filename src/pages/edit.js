@@ -1,8 +1,8 @@
-import data1 from "../data1";
+import data from "../data";
 
 const edit = {
     render(id) {
-        const result = data1.find((post) => post.id === id);
+        const result = data.find((post) => post.id === id);
         return /* html */`
          <div>
         <div class="md:grid md:grid-cols-3 md:gap-6">
