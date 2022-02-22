@@ -12,10 +12,9 @@ const Add = {
             <div class="max-w-7xl mx-auto py-6 sm:px-6 lg:px-8">
                 <div class="px-4 py-6 sm:px-0">
                     <form id="form-add-post">
-                        <input type="text" class="border border-black" id="title-post" placeholder="Title"/><br />
-                        <div><img width="200" src="https://thumbs.dreamstime.com/b/no-thumbnail-image-placeholder-forums-blogs-websites-148010362.jpg" id="img-preview"/></div>
-                        <input type="file" id="img-post" class="border border-black"  placeholder="Image" /> 
-                        <textarea name=""  cols="30" rows="10" class="border border-black" id="desc-post" placeholder="Description"></textarea><br />
+                        <input type="text" class="border border-black" id="title-post" placeholder="Title" /><br />
+                        <input type="file" id="img-post" class="border border-black"  placeholder="Image"  /> 
+                        <textarea name=""  cols="30" rows="10" class="border border-black" id="desc-post" placeholder="Description" ></textarea><br />
                         <button>Thêm</button>
                     </form>
                 </div>

@@ -54,8 +54,7 @@ router.on({
         print(Detailpage, data.id);
     },
     "/pages/table/:id/edit": ({ data }) => {
-        const { id } = data;
-        print(edit.render(id));
+        print(edit, data.id);
     },
     "admin/Dashboard": () => {
         print(Dashboard);

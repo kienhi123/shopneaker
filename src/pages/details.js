@@ -6,7 +6,7 @@ const Detailpage = {
         return /* html */`
                  <div>
                     <h1> ${data.title}</h1>
-                    <img src="${data.img}" alt=""/>
+                    <img src="${data.img}"  alt=""/>
                      <p> ${data.desc}</p>
                  
                  </div>
