@@ -12,7 +12,7 @@ const index = {
                 <th scope="col" class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">STT</th>
                 <th scope="col" class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Tiêu đề</th>
                 <th scope="col" class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Ảnh</th>
-                <th scope="col" class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Chất lượng</th>
+                <th scope="col" class=" px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Chất lượng</th>
             </tr>
         </thead>
         <tbody>
@@ -20,7 +20,7 @@ const index = {
           
             ${data.map((post, index) => `
                 <tr>
-                    <td class="px-6 py-4 whitespace-nowrap">${index + 1}</td>
+                    <td class=" px-6 py-4 whitespace-nowrap">${index + 1}</td>
                     <td class="px-6 py-4 whitespace-nowrap">${post.title}</td>
                     <td class="px-6 py-4 whitespace-nowrap">
                     <img src="${post.img}" width="80"/>
@@ -31,7 +31,7 @@ const index = {
                        
                     </td>
                     <td>
-                    <button data-id="${post.id}" class="btn btn-remove">Xóa</button>
+                    <button data-id="${post.id}" class="btn btn-remove bg-sky-300">Xóa</button>
                     </td>
                    
                 </tr>

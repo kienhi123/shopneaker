@@ -51,7 +51,7 @@ const Signin = {
                     email: {
                         required: "We need your email address to contact you",
                         email:
-                  "Your email address must be in the format of name@domain.com",
+                  "Your email address must be in the format of name@gmail.com",
                     },
                     password: {
                         password: "Please enter at least 6 characters.",
@@ -63,27 +63,22 @@ const Signin = {
         const formSignin = document.querySelector("#formSignin");
         formSignin.addEventListener("submit", async (e) => {
             e.preventDefault();
-            if (vali.validate().errorList.length === 0) {
-                try {
-                    const { data } = await signin({
-                        email: document.querySelector("#email").value,
-                        password: document.querySelector("#password").value,
-                    });
+            if (vali.errorList.length === 0) {
+                const { data } = await signin({
+                    email: document.querySelector("#email").value,
+                    password: document.querySelector("#password").value,
+                });
                     // Lấy thông tin loacalStorage và hiển thị
-                    localStorage.setItem("user", JSON.stringify(data.user));
-                    toastr.success("Bạn đã đăng nhập thành công, chờ 3s để chuyển trang");
-                    setTimeout(() => {
-                        // kiểm tra quyền dựa trên ID
-                        if (data.user.id === 1) {
-                            document.location.href = "/admin/Dashboard";
-                        } else {
-                            document.location.href = "/";
-                        }
-                    }, 3000);
-                } catch (error) {
-                    toastr.error(error.response.data);
-                // console.log(error.response.data);
-                }
+                localStorage.setItem("user", JSON.stringify(data.user));
+                toastr.success("Bạn đã đăng nhập thành công, chờ 3s để chuyển trang");
+                setTimeout(() => {
+                    // kiểm tra quyền dựa trên ID
+                    if (data.user.id === 1) {
+                        document.location.href = "/admin/Dashboard";
+                    } else {
+                        document.location.href = "/";
+                    }
+                }, 3000);
             }
         });
     },
