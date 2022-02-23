@@ -1,15 +1,14 @@
 // import axios from "axios";
 import axios from "axios";
 import $ from "jquery";
-
+import validate from "jquery-validation";
 import index from ".";
 import { add } from "../../api/posts";
 import { reRender } from "../../utils";
 
 const Add = {
     render() {
-        return /* html */`      
-        
+        return /* html */`  
         <div class="flex bg-gray-100 rounded-xl m-3 shadow-xl">
         <aside class="flex px-16 space-y-16 overflow-hidden m-3 pb-4 flex-col items-center justify-center rounded-tl-xl rounded-bl-xl bg-blue-800 shadow-lg">
         <div class="flex items-center justify-center p-4 shadow-lg">
@@ -83,11 +82,11 @@ const Add = {
                 <div class="px-4 py-6 sm:px-0">
                     <form id="form-add-post">
                         <label for="">Tên Sản Phẩm</label>
-                        <input type="text" name="title" class="border border-black" id="title-post" /><br />
+                        <input type="text" name="title" class="rounded-sm" id="title-post" /><br />
                         <label for="">Mô tả</label>
-                        <textarea name="desc"  cols="30" rows="10" class="border border-black" id="desc-post" placeholder="Description" ></textarea><br />
+                        <textarea name="desc"  cols="30" rows="10" class="rounded-sm" id="desc-post" placeholder="Description" ></textarea><br />
                         <label for="">Ảnh sản phẩm</label>
-                        <input type="file" name="file" id="img-post" class="border border-black"  placeholder="Image"  />
+                        <input type="file" name="file" id="img-post" class="rounded-sm"  placeholder="Image"  />
                         <button>Thêm</button>
                     </form>
             
@@ -105,11 +104,7 @@ const Add = {
       </main>
     </div>
         
-      </div>
-      
-   
-
-     
+      </div>   
         `;
     },
     afterRender() {
@@ -140,7 +135,7 @@ const Add = {
                 },
             },
         });
-        // console.log(document.querySelector('#form-add-post'));
+
         const formAdd = document.querySelector("#form-add-post");
         const imgPost = document.querySelector("#img-post");
         const CLOUD_API = "https://api.cloudinary.com/v1_1/djultth5g/image/upload";
@@ -165,14 +160,6 @@ const Add = {
                     desc: document.querySelector("#desc-post").value,
                 });
 
-                // fetch("http://localhost:3005/post", {
-                //     method: "POST",
-                //     headers: {
-                //         "Content-Type": "application/json",
-                //         // 'Content-Type': 'application/x-www-form-urlencoded',
-                //     },
-                //     body: JSON.stringify(post),
-                // });
                 window.location.href = "/admin/list";
                 reRender(index, "#app");
             }
