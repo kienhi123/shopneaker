@@ -81,12 +81,18 @@ const Add = {
             <div class="max-w-7xl mx-auto py-6 sm:px-6 lg:px-8">
                 <div class="px-4 py-6 sm:px-0">
                     <form id="form-add-post">
+                    <div>
                         <label for="">Tên Sản Phẩm</label>
                         <input type="text" name="title" class="rounded-sm" id="title-post" /><br />
+                     </div> 
+                     <div>  
                         <label for="">Mô tả</label>
                         <textarea name="desc"  cols="30" rows="10" class="rounded-sm" id="desc-post" placeholder="Description" ></textarea><br />
+                        </div>
+                        <div>
                         <label for="">Ảnh sản phẩm</label>
                         <input type="file" name="file" id="img-post" class="rounded-sm"  placeholder="Image"  />
+                        </div>
                         <button>Thêm</button>
                     </form>
             
